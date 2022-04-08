@@ -10,7 +10,7 @@ $(document).ready(function(){
         })
     })
     $(".search_select").change(function(){
-       var ret = window.open("test.html","_blank","width=550, height=600 , resizeble=no");
+       var ret = window.open("um_test.html","_blank","width=550, height=600 , resizeble=no");
     })
 
 })
@@ -75,7 +75,7 @@ function check() {
 
   // 테스트 비밀번호
   if (password == "1234") {
-      location.href = "newPassword.html"
+      location.href = "um_newPassword.html"
   } else {
       alert("비밀번호가 일치하지 않습니다");
       $("#password").val("");
@@ -99,7 +99,7 @@ function submit() {
       return false;
   } else {
       alert("비밀번호 변경이 완료되었습니다.");
-      location.href = "chart.html"
+      location.href = "um_chart.html"
       return true;
   }
 

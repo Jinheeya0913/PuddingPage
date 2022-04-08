@@ -8,4 +8,5 @@
         <property name="prefix" value="/WEB-INF/resource/user/views"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+
 </beans>
