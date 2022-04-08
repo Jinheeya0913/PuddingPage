@@ -1,0 +1,21 @@
+@media ( min-width : 801px) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		height: 400px;
+		margin-top: auto;
+		background-color: var(--brown-color);
+		color: var(--white-color);
+	}
+}
+
+@media ( max-width : 800px) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		height: 350px;
+		margin-top: auto;
+		background-color: var(--brown-color);
+		color: var(--white-color);
+	}
+}
