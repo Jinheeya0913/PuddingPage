@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/mypage_common.css">
+    <link rel="stylesheet" href="../css/mypage2.css"> 
+</head>
+
+<body>
+    <!-- 헤더영역 -->
+    <div id="headers"></div>
+    <!-- 사이드 메뉴 영역-->
+    <nav>
+        <div id="submenu"></div>
+    </nav>
+    <!-- 본묵 영역-->
+    <section>
+        <div class="outerBox">
+            <div class="content">
+                <!-- Single button -->
+                <div class="button-container">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                            category <span class="category"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="categorymenu">
+                            <li><a href="#">웹툰</a></li>
+                            <li><a href="#">웹소설</a></li>
+                            <li><a href="#">웹드라마</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                            분석선택 <span class="분석선택"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="분석메뉴">
+                            <li><a href="#">장르</a></li>
+                            <li><a href="#">해시태그</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart">
+                        <canvas id="pieChartCanvas" style="width: 100%;" width="300px" height="300px"></canvas>
+                    </div>
+                    <div class="detail">
+                        <ul>
+                            <li>1.</li>
+                            <li>2.</li>
+                            <li>3.</li>
+                            <li>4.</li>
+                            <li>5.</li>
+                            <li>6.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- 푸터 영역-->
+<div id="footers"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/chart.js"></script>
+</body>
+
+</html>

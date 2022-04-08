@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>보관함</title>
+<link rel="stylesheet" href="../css/mypage_common.css">
+<link rel="stylesheet" href="../css/mypage.css"> 
+</head>
+<body>
+
+    <!-- 헤더 영역 -->
+    <div id="headers"></div>
+
+    <!-- 사이드 메뉴 -->
+    <nav>
+        <div id="submenu"></div>
+    </nav>
+    <!-- 본문 부분-->
+
+    <section>
+        <div class="outerBox">
+            <div class="searchBox"> <h4>조회하기</h4>
+                <div>
+                    <select id="selectBox1" name="selectBox1" >
+                        <option value="" selected="selected">대분류</option>
+                        <option value="웹툰">웹  툰</option>
+                        <option value="웹소설">웹소설</option>
+                        <option value="드라마">드라마</option>
+                    </select>
+
+                    <select id="selectBox2" name="selectBox2">
+                        <option value="" selected="selected">소분류(장르)</option>
+                        <option value="(장르)드라마">드라마</option>
+                        <option value="(장르)로맨스">로맨스</option>
+                        <option value="(장르)무협">무협</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="searchBox"> <h4>내 작품 정보</h4>
+                <!-- 박스선택시 보이게 -->
+                <div class="search_div">
+                    <div class="search_img">
+                        <img src="../source/test1.png">
+                    </div>
+
+                    <div class="search_title">
+                        <div>줄무늬 고양이 코우메</div>
+                    </div>
+                    <select class='search_select'></select>
+                </div>
+
+                <!-- 테스트 -->
+                <div class="search_div">
+                    <div class="search_img">
+                        <img src="../source/test2.png">
+                    </div>
+
+                    <div class="search_title">
+                        <div>정령왕 엘퀴네스</div>
+                    </div>
+                    <select class='search_select'></select>
+                </div>
+
+                <div class="search_div">
+                    <div class="search_img">
+                        <img src="../source/test3.png">
+                    </div>
+
+                    <div class="search_title">
+                        <div>이번생은 가주가 되겠습니다</div>
+                    </div>
+                    <select class='search_select'></select>
+                </div>
+        </div>
+    </section>
+
+    </div>
+
+    <!-- 푸터 영역 -->
+    <div id="footers"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/mypage.js"></script>
+
+
+</body>
+</html>
