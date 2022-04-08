@@ -147,6 +147,16 @@
         </dependency>
 
 
+    <!-- JSP -->
+
+    <!-- tomcat-embed-jasper -->
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-jasper</artifactId>
+      <version>9.0.58</version>
+    </dependency>
+
+
     <!--javax-->
 
       <!--Servlet-->
@@ -155,6 +165,8 @@
           <artifactId>javax.servlet-api</artifactId>
           <version>4.0.1</version>
         </dependency>
+
+
 
       <!--EL TAG -->
       <dependency>

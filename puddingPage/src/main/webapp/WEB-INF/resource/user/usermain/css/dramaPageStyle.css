@@ -1,16 +1,32 @@
+/*폰트 스타일 */
+
+span {
+	font-size: 0.4rem;
+}
+
+ul{
+	font-size: 0.8rem;
+}
+
+.head_director, .head_actors{
+	color: blue;
+}
+
+
+
+/*영역 스타일 */
 #dr_section{
 	display: flex;
 	flex-direction: column;
 	border: solid 1px;
-	padding: 10px 10px 10px 10px;
 	width: 100%-10px;
 
 }
 
 .dr_List{
 	display: flex;
-	border: solid 1px;
-	width: 100%;
+	justify-content: space-between;
+	width: 100%-5px;
 	height: 100%;
 }
 
@@ -22,10 +38,12 @@
 	padding: 0 0 0 0px;
 }
 
-.dr_l{
+.dr_u >li{
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	border-bottom: solid 1px;
+
 }
 
 .dr_imgbox{
@@ -34,9 +52,35 @@
 }
 
 .dr_imgbox > a > img{
-	
 	width: 100%;
+	min-width: 30px;
 }
+
+.dr_info{
+	overflow: hidden;
+	width: 100%;
+	margin: 5px 5px 5px 5px;
+}
+
+.dr_info :first-child{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 5px;
+}
+
+.info_l > a{
+	display: block;
+}
+
+.description {
+	
+	overflow: scroll;
+	text-overflow: ellipsis;
+	max-height: 40px;
+}
+
+
 
 
 
