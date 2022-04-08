@@ -194,24 +194,25 @@ a{
 .ct_List{
 	display: flex;
 	width: 100%;
-	padding: ;
 	border: solid 1px;
 }
 
 	/*썸네일 목록*/
 
 
-.ct_List > ul {
+.ct_u {
+	display: flex;
+	flex-direction: column;
 	list-style: none;
+	width: 100%;
 	padding: 10px 10px 10px 10px;
 	margin: 0 0 0 0 ;
 }
 
-.ct_List > ul > li {
+.ct_u > li {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	height: 100%;
 	max-height: 150px;
 }
 
@@ -219,7 +220,7 @@ a{
 .ct_img{
 	display: flex;
 	width: 200px;
-	height: 200px;
+	height: 100%;
 	border: solid 1px;
 }
 
@@ -231,22 +232,25 @@ a{
 	display: inline-block;
 	padding: 5px 5px 5px 5px;
 	border: solid 1px;	
-	width: 100%;
+	width: 90%;
 	height: 100%;
 }
 
 .ct_info > a {
-	font-size: 1rem;
+	width: 100%;
+	font-size: 0.8rem;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
 
 .ct_details {
 	border: double 0.5px;
+	border-radius:5px ;
 
 }
 
 .ct_story {
+	width: 100%;
 	max-height: 80px;
 	overflow: scroll;
 
