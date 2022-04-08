@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <!-- 페이지 이미지 -->
+    <link href="../projectimage/pudding(32px).png" rel="shortcut icon" type="image/x-icon">
+    
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- 로고 -->
+        <div class="logobox">
+            <a href="../프로젝트html/header.html"><img src="../projectimage/pudding(64px).png" alt="mainlogo"></a>
+        </div>
+        
+        <!-- 메뉴 -->
+        <ul class="menubox">
+            <li class="mainmenu"><a href="#">웹툰</a></li>
+            <li class="mainmenu"><a href="#">소설</a></li>
+            <li class="mainmenu"><a href="#">드라마</a></li>
+            <li class="mainmenu"><a href="#">내 보관함</a></li>
+        </ul>
+
+        <!-- 검색,유저아이콘 -->
+        <div class="supports">
+            <div class="searchbox">
+                <input type="text" placeholder="검색">
+                <button><img src="../projectimage/searchicon(20px).png" alt="searchicon"></button>
+            </div>
+            <div class="user_menu">
+                <a><img src="../projectimage/usericon(32px).png" alt="usericon"></a>
+                <ul class="hide">
+                    <li class="user_bar_header">
+                        <button class="x"><img src="../projectimage/close(32px).png"></button>
+                        <div class="pudding_list">
+                            남은 푸딩 : 0개
+                        </div>
+                        <a href="#">푸딩 충전하기 >></a>    
+                    </li>
+                    <li class="user_menu_item"><a href="../view/chart.html">내 선호도</a></li>
+                    <li class="user_menu_item"><a href="../view/user_box.html">내 보관함</a></li>
+                    <li class="user_menu_item"><a href="../view/myPudding.html">내 푸딩</a></li>
+                    <li class="user_menu_item"><a href="../view/charge.html">결제내역</a></li>
+                    <li class="user_menu_item"><a href="../view/nowPassword.html">내 정보</a></li>
+                    <li class="user_menu_item"><a href="../view/faq.html">F  A  Q</a></li>
+                    <li class="user_menu_item"><a href="#">로그아웃</a></li>    
+                </ul>
+            </div>
+        </div><!-- end supports -->
+    </header>
+
+    
+    <script src="https://kit.fontawesome.com/4054601d2a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".user_menu>a").click(function(){
+                $('.hide').slideDown();
+            });
+            $("button.x").click(function(){
+                $('.hide').slideUp();
+            })
+        });
+    </script>
+</body>
+</html>

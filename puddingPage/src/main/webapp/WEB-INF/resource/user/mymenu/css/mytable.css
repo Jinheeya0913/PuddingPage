@@ -1,0 +1,104 @@
+
+/* 사용한 날짜, 분류, 장르, 사용작품, 푸딩 묶음 */
+.wrap{
+  display: flex;
+  justify-content: center;
+}
+
+/* 모바일시 사용한 날짜,분류, 장르,사용작품 = bundle   사용푸딩 =pudding으로 나눠 관리하기위해 */
+#titleBox, .bundle, .pudding {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+} 
+
+/* 모든 div를 표처럼 만들었다. */
+.box{
+  width: 250px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+  height: 2em;
+  padding: 0 10px;
+
+}
+
+.box2{
+  width: 250px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+  height: 2em;
+  padding: 0 10px;
+}
+
+
+/* 작품명*/
+.bundle .box:nth-last-child(1){
+   /* 글 영역 벗어나면 ...으로 숨기기 */
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+
+/* 모바일용 */
+@media screen and (max-width:768px){
+/* 모바일용은 날짜 분류 제목태그 사라짐 */
+  #titleBox{
+    display: none;
+  }
+
+  /* 모든 div */
+  .box{
+    width: 33%;
+    border:none;   
+  }
+
+  .box2{
+    width: 100%;
+    border:none;   
+  }
+
+
+  /* 사용한 푸딩 묶음 */
+  .wrap{
+    border: 1px solid black;
+    margin-bottom: 3%;
+    height: 6rem;
+
+  }
+
+  /* 날짜, 분류, 장르, 작품명만 묶고 작품명은 내리기 */
+  .bundle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5%;
+  }
+
+  /* 내린 작품명 배치하기 */
+  .bundle .box:nth-last-child(1){
+    width: 75%;
+    text-align: left;
+    margin-right: 17%;
+    /* 글 영역 벗어나면 ...으로 숨기기 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+  }
+
+  /* 사용한 푸딩 배치 */
+  .pudding div{
+    display: flex;
+    width: max-content;
+    height: auto;
+    position: absolute;
+    right: 13%;
+    padding-top: 58px;
+    
+  }
+
+
+
+}

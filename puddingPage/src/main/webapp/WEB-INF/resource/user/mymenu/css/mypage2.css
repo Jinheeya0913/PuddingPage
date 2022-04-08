@@ -1,0 +1,140 @@
+/* ====================== 비밀번호 확인 ========================== */
+
+.password_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    flex: auto;
+    max-width: 600px;
+}
+
+.password_form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.password_form>.password_form__description {
+    margin-top: 10px;
+}
+
+.password_form>.password {
+    margin-top: 10px;
+    height: 40px;
+}
+
+.password_form>.password_form__button {
+    margin-top: 10px;
+    height: 40px;
+}
+
+/* ======================    차트 ============================= */
+li > a {
+    color: #000 !important;
+    padding: 0 10px;
+}
+
+/* html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* header, footer {
+    flex-basis: 150px;
+    background: grey;
+} */
+
+/* section {
+    flex-direction: row;
+    flex: auto;
+} */
+
+section > .content {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content > .chart-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content > .chart-container > .chart {
+    max-width: 400px;
+}
+
+/* ====================== 내정보 수정하기 ======================= */
+/* 
+section{
+    padding: 30px;
+} */
+
+.change-password {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    padding: 20px;
+    position: relative;
+    max-width: 450px;
+}
+
+.change-password__items input, .change-password__items select, .change-password__items button {
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.change-password__items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.change-password__items > :first-child {
+    margin-bottom: 10px;
+}
+
+.change-password__items > label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.change-password__items > .change-password__item--row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 모바일 기준 */
+@media (max-width: 768px) {
+
+/* ====================== 비밀번호 확인 ========================== */
+    ::selection {
+        width: 80%;
+    }
+
+    .password_form>.password {
+        width: 95%;
+    }
+
+    .password_form>.password_form__button {
+        width: 97%;
+    }
+
+/* ====================== 내정보 수정하기 ======================= */
+
+    .change-password__item{
+        display: flex;
+        flex-direction: row;
+    }
+
+/* ========================  차 트 ============================= */
+    .content > .chart-container {
+        flex-direction: column;
+    }
+}
