@@ -6,10 +6,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class MyPostgresConnectionTest {
-    private static final String DRIVER = "org.postgresql.Driver";
-    private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
-    private static final String ID = "jinhee";
-    private static final String PASS = "wlsgml0913";
+    private static final String DRIVER = "EMPTY";
+    private static final String URL = "EMPTY";
+    private static final String ID = "EMPTY";
+    private static final String PASS = "EMPTY";
 
     @Test
     public void testConnection()throws Exception {
