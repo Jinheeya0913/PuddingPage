@@ -1,0 +1,60 @@
+<link href="../source/commonimage/pudding(32px).png" rel="shortcut icon"
+	type="image/x-icon">
+<link rel="stylesheet" href="../css/header.css" />
+<!-- HEADER -->
+<header>
+	<!-- 로고 -->
+	<div class="logobox">
+		<a href="#"><img src="../source/commonimage/pudding(64px).png" alt="mainlogo"></a>
+	</div>
+
+	<!-- 메뉴 -->
+	<ul class="menubox">
+		<li class="mainmenu"><a href="#">웹툰</a></li>
+		<li class="mainmenu"><a href="#">소설</a></li>
+		<li class="mainmenu"><a href="#">드라마</a></li>
+		<li class="mainmenu"><a href="#">내 보관함</a></li>
+	</ul>
+
+	<!-- 검색,유저아이콘 -->
+	<div class="supports">
+		<div class="searchbox">
+			<input type="text" placeholder="검색">
+			<button>
+				<img src="../source/commonimage/searchicon(20px).png" alt="searchicon">
+			</button>
+		</div>
+		<div class="user_menu">
+			<a><img src="../source/commonimage/usericon(32px).png" alt="usericon"></a>
+			<ul class="hide">
+				<li class="user_bar_header">
+					<button class="x">
+						<img src="../source/commonimage/close(32px).png">
+					</button>
+					<div class="pudding_list">남은 푸딩 : 0개</div> <a href="#">푸딩 충전하기
+						>></a>
+				</li>
+				<li class="user_menu_item"><a href="#">내 선호도</a></li>
+				<li class="user_menu_item"><a href="#">내 보관함</a></li>
+				<li class="user_menu_item"><a href="#">내 푸딩</a></li>
+				<li class="user_menu_item"><a href="#">결제내역</a></li>
+				<li class="user_menu_item"><a href="#">내 정보</a></li>
+				<li class="user_menu_item"><a href="#">자주묻는 질문</a></li>
+				<li class="user_menu_item"><a href="#">로그아웃</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end supports -->
+</header>
+<script src="https://kit.fontawesome.com/4054601d2a.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".user_menu>a").click(function() {
+			$('.hide').slideDown();
+		});
+		$("button.x").click(function() {
+			$('.hide').slideUp();
+		})
+	});
+</script>

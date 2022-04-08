@@ -1,0 +1,318 @@
+
+
+#wrap{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 30px;
+}
+
+
+a{
+	text-decoration: none;
+
+}
+
+
+/* 프로모션 섹션 */
+	#pm_section{
+		display: flex;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+
+		
+	/* 슬라이더 이미지 */
+
+		#pm_section > div {
+			display: flex;
+			
+		}
+
+		.pm_p_imgs > div{
+			display: none;
+		}
+
+		/* 모바일 환경 이미지 영역  */
+
+		
+			.pm_img1{
+				display: flex;
+				width: 100%;								
+				/*애니메이션 효과*/
+				/*transition: left 0.5s ease-out;*/
+			}
+
+
+			.pm_img2, .pm_img3{
+				display: none;
+				width: 100%;
+			}
+
+
+
+			/*.pm_imgs div > img{
+				padding: 0 10px 0 10px;
+				width: 100%;
+				border: solid 0.1em;
+				overflow: hidden;
+			}*/
+
+			
+
+
+
+	/* 슬라이더 버튼 */
+		
+		#pm_section .pm_btn{
+			display: flex;
+			flex-direction: row;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			justify-content: space-between;
+			align-items: center;
+
+		}
+
+		.pm_btn > a {
+			text-decoration: none;
+		}
+
+
+	
+	/* 슬라이더 라디오 */
+		
+		#pm_section .radio{
+			position: absolute;
+			width: 100%;
+			justify-content: center;
+			bottom: 5px
+		}
+
+		#pm_section .radio .pos1{
+			
+		}
+
+
+
+/* 서브메뉴 섹션 */
+
+	#submenu{
+		display: flex;
+		width: 100%;
+		border: solid 1px;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+
+	#box {
+		display: inline-block;
+		width: 100%;
+	}
+
+
+	.ul_sub{
+
+		display: flex;
+		justify-content: space-between;
+		padding: 0 0 0 0;
+		width: 100%;
+		list-style: none;
+	}
+
+	.li_sub{
+		display: inline-block;
+		list-style: none;
+	}
+
+	.li_sub:first-child{
+		margin-left: 0px;
+		margin-right: 10px;
+	}
+
+
+
+	.li_sub a{
+		font-size: 1em;
+		font-size: 1rem;
+		white-space: nowrap;
+		text-decoration: none;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+
+/*요일 선택*/
+	
+	.select_day{
+		display: flex;
+	}
+
+	.select_day ul{
+		display: flex;
+		justify-content: space-between;
+		margin: -1px 0px 0px 0px;
+		padding: 0;
+		list-style: none;
+		width: 100%;
+		border: solid 0.01rem;
+		border-radius: 5px;
+	}
+
+	.select_day .daylist{
+		display: inline-block;
+		list-style: none;
+		font-size: 1em;
+		font-size: 1rem;
+
+	}
+
+	.daylist:first-child{
+		padding-left: 0.1rem;
+	}
+
+	.daylist:last-child{
+		padding-right: 0.1rem;
+	}
+
+	.daylist a{
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+
+/*콘텐츠 */
+
+
+	
+#ct_section{
+	display: flex;
+	width: 100%;
+
+}
+
+.ct_List{
+	display: flex;
+	width: 100%;
+	border: solid 1px;
+}
+
+	/*썸네일 목록*/
+
+
+.ct_u {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	margin: 0 0 0 0 ;
+}
+
+.ct_u > li {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	max-height: 150px;
+	border: solid 1px;
+}
+
+
+.ct_img{
+	display: flex;
+	border: solid 1px;
+	width: 100%;
+	min-width: 160px;
+}
+
+.ct_img> a{
+	display: flex;
+	overflow: hidden;
+}
+
+.ct_img > a > img{
+	width: 100%;
+	align-items: center;
+}
+
+
+
+.ct_info{
+	display: flex;
+	flex-direction: column;
+	padding: 5px 5px 5px 5px;
+	width: 100%;
+	border: solid 1px;	
+	height: 100%;
+}
+
+.ct_info > a {
+	width: 100%;
+	font-size: 0.8rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+}
+
+.ct_details {
+	border: double 0.5px;
+	width: 100%;
+	border-radius:5px ;
+
+}
+
+.ct_story {
+	width: 100%;
+	max-height: 80px;
+	overflow: scroll;
+
+}
+
+
+
+
+
+@media all and (min-width: 500px){
+
+	.pm_p_imgs{
+		display: flex;
+		height: 50%;	
+		width: 100%;
+	}
+
+	.pm_m_wrap > div{
+		display: none;
+	}
+
+	.pm_p_imgs > div {
+		display: flex;
+		width: 100%;
+		height: 200px;
+		margin-left: 3.0rem;
+		margin-right: 3.0rem;
+		
+	}
+
+
+	.pm_p_imgs > div > img{
+		display: block;
+		width: 100%;
+	}
+
+	.pm_btn > a{
+		display: none;
+	}
+
+	.pos1 {
+		display: none;
+	}
+
+
+
+
+}
+
+
+
