@@ -43,10 +43,14 @@
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value> WEB-INF/spring/customContext/spring-servlet.xml
-                    <!-- 추가 컨텍스트  -->
-      </param-value>
+      <param-value>WEB-INF/spring/customContext/spring-servlet.xml</param-value>
     </init-param>
+    <init-param>
+      <param-name>throwExceptionIfNoHandlerFound</param-name>
+      <param-value>true</param-value>
+    </init-param>
+
+
     <load-on-startup>0</load-on-startup>
   </servlet>
 <!-- 관리자 Context (Controller) 등록  -->

@@ -76,6 +76,14 @@
           <artifactId>postgresql</artifactId>
           <version>42.3.3</version>
         </dependency>
+
+        <dependency>
+          <groupId>kg.im4</groupId>
+          <artifactId>puddingPage</artifactId>
+          <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+
         <!-- mybatis -->
         <dependency>
           <groupId>org.mybatis</groupId>
@@ -147,6 +155,16 @@
         </dependency>
 
 
+    <!-- JSP -->
+
+    <!-- tomcat-embed-jasper -->
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-jasper</artifactId>
+      <version>9.0.58</version>
+    </dependency>
+
+
     <!--javax-->
 
       <!--Servlet-->
@@ -184,6 +202,9 @@
         <version>1</version>
       </dependency>
 
+
+<!--Other -->
+
     <!-- junit -->
     <dependency>
       <groupId>junit</groupId>
@@ -191,6 +212,22 @@
       <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
+    <!--log4j-core -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.17.2</version>
+    </dependency>
+
+    <!--Lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.22</version>
+      <scope>provided</scope>
+    </dependency>
+
+
 
 
 

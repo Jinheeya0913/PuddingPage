@@ -1,0 +1,60 @@
+<link href="../source/commonimage/pudding(32px).png" rel="shortcut icon"
+	type="image/x-icon">
+<link rel="stylesheet" href="../common/css/header.css" />
+<!-- HEADER -->
+<header>
+	<!-- �ΰ� -->
+	<div class="logobox">
+		<a href="#"><img src="../source/commonimage/pudding(64px).png" alt="mainlogo"></a>
+	</div>
+
+	<!-- �޴� -->
+	<ul class="menubox">
+		<li class="mainmenu"><a href="#">����</a></li>
+		<li class="mainmenu"><a href="#">�Ҽ�</a></li>
+		<li class="mainmenu"><a href="#">���</a></li>
+		<li class="mainmenu"><a href="#">�� ������</a></li>
+	</ul>
+
+	<!-- �˻�,���������� -->
+	<div class="supports">
+		<div class="searchbox">
+			<input type="text" placeholder="�˻�">
+			<button>
+				<img src="../source/commonimage/searchicon(20px).png" alt="searchicon">
+			</button>
+		</div>
+		<div class="user_menu">
+			<a><img src="../source/commonimage/usericon(32px).png" alt="usericon"></a>
+			<ul class="hide">
+				<li class="user_bar_header">
+					<button class="x">
+						<img src="../source/commonimage/close(32px).png">
+					</button>
+					<div class="pudding_list">���� Ǫ�� : 0��</div> <a href="#">Ǫ�� �����ϱ�
+						>></a>
+				</li>
+				<li class="user_menu_item"><a href="#">�� ��ȣ��</a></li>
+				<li class="user_menu_item"><a href="#">�� ������</a></li>
+				<li class="user_menu_item"><a href="#">�� Ǫ��</a></li>
+				<li class="user_menu_item"><a href="#">��������</a></li>
+				<li class="user_menu_item"><a href="#">�� ����</a></li>
+				<li class="user_menu_item"><a href="#">���ֹ��� ����</a></li>
+				<li class="user_menu_item"><a href="#">�α׾ƿ�</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end supports -->
+</header>
+<script src="https://kit.fontawesome.com/4054601d2a.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".user_menu>a").click(function() {
+			$('.hide').slideDown();
+		});
+		$("button.x").click(function() {
+			$('.hide').slideUp();
+		})
+	});
+</script>
