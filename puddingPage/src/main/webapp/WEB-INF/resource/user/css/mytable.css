@@ -85,7 +85,7 @@
     /* 글 영역 벗어나면 ...으로 숨기기 */
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
   }
 
   /* 사용한 푸딩 배치 */
