@@ -22,23 +22,19 @@ function callfunc() {
     var select2 = $("select[name=selectBox2]").val();
     
 
-        for(var i=1; i<=10; i++) {        
-            var optionAppend;
-            optionAppend += "<option value="+i+" > EP : "+i+"</option>"
-        }
-
-
     $(".search_div").show();
-    
-    $(".search_select").html("<option>"+ select1 + select2+"</option>");
-    $(".search_select option:eq(0)").after(optionAppend);
+    $(".search_prodect").html("<span class='search_span'>"+ select1 + " || "+select2+"</span>");
 
-        
     if(select1=="" || select2==""){
         $(".search_div").hide();
     }
 
+}
 
+function actionmove(){
+    
+    window.open("um_test.html","_blank","width=550, height=600 , resizeble=no");
+  
 }
 
 // ======================== FAQ ============================ 
@@ -65,7 +61,6 @@ function FaqBox__init() {
     });
   }
   
-  FaqBox__init();
 
   // =======================비밀번호 확인하기 ==========================
 
