@@ -11,27 +11,53 @@
   margin-left: 20%;
   margin-bottom: 5%;
 }
-
 .search_div{
   border: 1px solid black;
   display: flex;
-  width: 65%;
-  margin: 3% auto;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
   margin-bottom: 3%;
 }
 
-.search_img{
+.userBox_bundle{
   display: flex;
-  padding: 1% 5%;
-  max-width: 110px;
-  max-height: 150px;
+  margin: auto;
+  width: 90%;
 }
 
-.search_title{
-  width: 70%;
-  padding-top: 5%;
-  padding-left: 15%;
+
+.title_box {
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 50%;
   text-align: left;
+}
+
+.title_box div{
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search_prodect{
+  margin-top: 5%;
+}
+
+.search_prodect{
+  color: blue;
+}
+.search_img img{
+  width: 100%;
+}
+
+.move img{
+  display: flex;
+  position: absolute;
+  width: 1%;
+  right: 38%;
+  padding-top: 1%;
 }
 
 /* 셀렉트 박스 */
@@ -39,18 +65,11 @@ div select{
     width: 30%;
     height: 30px;
     text-align: center;
-}
+} 
 #selectBox1{
     margin-right: 25px;
 }
 
-.search_select{
-    display: flex;
-    margin-top: 6rem;
-    right: 40%;
-    position: absolute;
-    width: 15%;
-}
 
 /* =============== FAQ ====================== */
 
@@ -109,33 +128,6 @@ ul > li{
 
 /*================ 내 보관함 ==================*/   
 
-    .search_div{
-      border: 1px solid black;
-      display: flex;
-      width: 90%;
-      margin: 3% auto;
-      margin-bottom: 3%;
-      flex-direction: row;
-      flex-wrap: wrap;
-      overflow: hidden;
-    }
-    
-    .search_img{
-      display: flex;
-      padding: 1% 5%;
-      max-width: 70px;
-      max-height: 150px;
-    }
-    
-    .search_title{
-      width: 60%;
-      padding-top: 7%;
-      padding-left: 20%;
-      text-align: left;
-      white-space: nowrap;
-      overflow: visible;
-      text-overflow: ellipsis;
-    }
     
     /* 셀렉트 박스 */
     div select{
@@ -144,12 +136,38 @@ ul > li{
         text-align: center;
     }
 
-    .search_select{
-      margin-top: 20%;
-      right: 4.5rem; 
+    .search_div{
+      border: 1px solid black;
+      display: flex;
+      width: 95%;
+      margin: auto;
+      padding: 10px;
+      margin-bottom: 3%;
+    }
+    
+    
+    .title_box {
+      margin-left: 5%;
+      margin-top: 5%;
+      width: 60%;
+      text-align: left;
+    }
+    
+    .title_box div{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .move img{
+      display: flex;
       position: absolute;
-      width: 40%;
-  }
+      width: 8%;
+      right: 15%;
+      padding-top: 18%;
+    }
+
+    
 
 /* =============== FAQ ====================== */
     .faq-box {
