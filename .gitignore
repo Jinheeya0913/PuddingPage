@@ -2,6 +2,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/eclipse,intellij,macos,windows,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=eclipse,intellij,macos,windows,visualstudiocode
 
+#Important Informations
+db.properties
+
 ### Eclipse ###
 .metadata
 bin/
@@ -252,8 +255,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-#Important Information
-db.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,intellij,macos,windows,visualstudiocode
