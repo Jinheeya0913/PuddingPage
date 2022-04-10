@@ -33,7 +33,12 @@
   width: 50%;
   text-align: left;
 }
+.title_box a{
+  text-decoration: none;
+  overflow: hidden;
+  color: black;
 
+}
 .title_box div{
   cursor: pointer;
   white-space: nowrap;
