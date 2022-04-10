@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardDAO">
+    <insert id="insertBoard" parameterType="myboard">
+        INSERT INTO MYBOARD (SEQ,TITLE,WRITER, CONTENT)
+        VALUES((SELECT COALESCE (MAX(seq),0) +1 FROM MYBOARD), #{title}, #{writer}, #{content})
+    </insert>
+    <update id="updateBoard" parameterType="myboard">
+        UPDATE MYBOARD SET TITLE =#{title}, content=#{content} where seq = #{seq}
+    </update>
+    <delete id="deleteBoard" parameterType="myboard">
+        delete from myboard where seq =#{seq}
+    </delete>
+    <select id="getBoard" resultType="myboard" parameterType="myboard">
+        select * from myboard where seq =#{seq}
+    </select>
+    <select id="getBoardList" resultType="myboard" parameterType="myboard">
+        select * from myboard
+        where title like '%'||#{searchKeyword}||'%'
+        order by seq desc
+    </select>
+
+</mapper>
