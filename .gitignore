@@ -253,4 +253,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#Important Information
+db.properties
+
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,intellij,macos,windows,visualstudiocode
