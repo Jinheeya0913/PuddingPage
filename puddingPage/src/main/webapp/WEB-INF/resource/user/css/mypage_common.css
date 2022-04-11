@@ -48,6 +48,7 @@ section{
     position: absolute;
     width: 13%;
     right:8%;
+    z-index: -1;
 }
 
 .banner_Box img{
