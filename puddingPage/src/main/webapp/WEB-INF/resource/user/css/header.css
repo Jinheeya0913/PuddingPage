@@ -149,6 +149,7 @@ body {
         margin-bottom: 1rem;
     }
     .supports .user_menu .hide {
+        padding:0;
         display: none;
         flex-direction: column;
         position: absolute;
@@ -229,6 +230,7 @@ body {
     }
     
     .supports .user_menu .hide {
+        padding:0;
         display: none;
         position: fixed;
         top: 0;
