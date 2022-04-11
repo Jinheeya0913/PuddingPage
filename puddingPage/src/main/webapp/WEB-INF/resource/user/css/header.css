@@ -24,7 +24,7 @@
 body {
     font-family: Nanum Gothic Coding;
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     /* HEADER */
     header {
         border-top: 8px solid var(--white-color);
@@ -162,7 +162,7 @@ body {
     }
     
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     header {
         display: flex;
         width: 90%;
@@ -297,5 +297,5 @@ body {
         white-space: nowrap;
     }
 
-
+    
 }
