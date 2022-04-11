@@ -5,7 +5,7 @@
 <configuration>
     <properties resource="db.properties"/>
     <typeAliases>
-        <typeAlias alias="myboard" type="kg.im4.web.board.BoardVO"/>
+        <typeAlias alias="mymember" type="kg.im4.puddingPage.user.vo.MemberVO"/>
     </typeAliases>
 
     <environments default="development">
@@ -20,6 +20,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="mappings/board-mapping.xml"/>
+        <mapper resource="mappings/user-mapping.xml"/>
     </mappers>
 </configuration>
