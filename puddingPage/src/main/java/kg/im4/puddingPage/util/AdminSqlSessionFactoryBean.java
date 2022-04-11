@@ -1,4 +1,5 @@
-package kg.im4.web.util;
+package kg.im4.puddingPage.util;
+
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -7,13 +8,14 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.Reader;
 
-public class SqlSessionFactoryBean {
+public class AdminSqlSessionFactoryBean {
+
     private static SqlSessionFactory sessionFactory = null;
 
     static {
         try {
             if (sessionFactory == null) {
-                Reader reader = Resources.getResourceAsReader("mybatis-config.xml");
+                Reader reader = Resources.getResourceAsReader("admin-config.xml");
                 sessionFactory = new SqlSessionFactoryBuilder().build(reader);
             }
         } catch (Exception e) {
@@ -24,6 +26,5 @@ public class SqlSessionFactoryBean {
     public static SqlSession getSqlSessionInstance() {
         return sessionFactory.openSession();
     }
-
-
 }
+

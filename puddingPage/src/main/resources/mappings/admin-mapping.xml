@@ -2,6 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper>
-
+<mapper namespace="AdminDAO">
+    <insert id="createAdmin" parameterType="myadmin">
+        INSERT INTO ADMIN_TABLE (AD_ID, AD_PW, AD_NAME, AD_EMAIL, AD_TELL, AD_SUPER)
+        VALUES (#{ad_id} , #{ad_pw} , #{ad_name} , #{ad_email} , #{ad_tell} , #{ad_super})
+    </insert>
 </mapper>

@@ -14,7 +14,7 @@ public class SqlSessionFactoryBean {
     static {
         try {
             if (sessionFactory == null) {
-                Reader reader = Resources.getResourceAsReader("user-config.xml");
+                Reader reader = Resources.getResourceAsReader("mybatis-config.xml");
                 sessionFactory = new SqlSessionFactoryBuilder().build(reader);
             }
         } catch (Exception e) {
