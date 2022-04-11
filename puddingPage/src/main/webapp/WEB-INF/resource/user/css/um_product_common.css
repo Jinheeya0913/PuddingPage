@@ -1,0 +1,34 @@
+
+/* 본문 세션 */
+
+section{
+    margin: auto;
+    width: 52%;
+    min-height: 800px;
+    margin-bottom: 1%;
+    background-color: aquamarine;
+}
+
+
+.outerBox{
+    border:  2px solid #c67100;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+
+}
+
+@media screen and (max-width:800px){
+
+    
+   section{
+        width: 100%;
+    }
+
+    .outerBox{
+        width: 90%;
+        border:  2px solid #c67100;
+        padding: 3%;
+        margin: 8% auto ;
+    }
+}

@@ -1,0 +1,29 @@
+
+/* 본문 세션 */
+
+.viewer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.viewer >img{
+    width: 100%;
+}
+
+.viewer >iframe{
+    min-height: 55rem;
+    width: 100%;
+}
+
+@media screen and (max-width:800px){
+    .viewer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    
+    
+}

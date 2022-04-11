@@ -43,7 +43,7 @@
 
 
 /* 모바일용 */
-@media screen and (max-width:768px){
+@media screen and (max-width:800px){
 /* 모바일용은 날짜 분류 제목태그 사라짐 */
   #titleBox{
     display: none;
