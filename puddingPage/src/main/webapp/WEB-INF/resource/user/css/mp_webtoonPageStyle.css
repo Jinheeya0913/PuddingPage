@@ -84,4 +84,5 @@
 	width: 100%;
 	max-height: 60px;
 	overflow: scroll;
+	overflow-x: hidden;
 }

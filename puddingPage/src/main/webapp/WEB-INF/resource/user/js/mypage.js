@@ -31,11 +31,6 @@ function callfunc() {
 
 }
 
-function actionmove(){
-    
-    window.open("um_test.html","_blank","width=550, height=600 , resizeble=no");
-  
-}
 
 // ======================== FAQ ============================ 
 
