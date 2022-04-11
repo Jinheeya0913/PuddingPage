@@ -83,7 +83,7 @@ ul > li{
 }
 
 .faq{
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -129,7 +129,7 @@ ul > li{
 
 
 /* 모바일용 */
-@media screen and (max-width:768px){
+@media screen and (max-width:800px){
 
 /*================ 내 보관함 ==================*/   
 

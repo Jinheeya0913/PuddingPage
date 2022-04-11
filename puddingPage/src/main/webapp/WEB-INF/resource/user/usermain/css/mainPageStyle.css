@@ -1,0 +1,95 @@
+/*쓰레기통*/
+
+
+
+
+/* 모바일용 + 공통 스타일 */
+
+
+/**/
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#wrap{
+	padding : 10px 10px 10px 10px;
+}
+
+
+
+/* 섹션 공통 */
+
+	section {		
+		display: flex;
+		position: relative;
+		margin: 10px 10px;
+		flex-direction: column;
+	}
+
+	/* 헤더 */
+
+		section .sliderHead .SliderTitle{
+			
+			margin-left:10px;
+			margin-top:10px;
+			float:left;
+		}
+
+		.sliderHead .more{
+			margin-right:10px;
+			margin-top:10px;
+			float:right;
+		}
+
+		.more a{
+			text-decoration: none;
+			font-size: 0.5rem;
+			color: brown;
+		}
+
+
+	/*이미지 영역*/
+	
+		section .imgs {
+			display: flex;
+			border: solid 0.1rem;
+			padding: 10px 0 0 0;
+		}
+
+		section .imgs div{
+			display: block;
+			float: left;
+			width: 20%;
+			text-align: center;
+			align-items: center;
+		}
+
+		.imgs div > a {
+			font-size: 1rem;
+			display: block;
+			white-space: nowrap;
+			text-overflow:ellipsis;
+			text-decoration: none;
+		}
+
+
+		.imgs div > img{
+			width: 60%;
+		}
+
+
+
+
+
+/* PC 용 스타일 */
+@media all and (min-width: 500){
+
+	
+
+		
+}

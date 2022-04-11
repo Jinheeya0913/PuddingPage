@@ -10,7 +10,7 @@ section{
 }
 
 .outerBox{
-    border:  2px solid #c67100;
+    border: 0px;
     width: 95%;
     height: 100%;
     padding: 3%;
@@ -40,7 +40,7 @@ section{
     margin-top: 1rem;
     font-size: 15px;
     position: relative;
-    padding: 6px 12px;
+    padding: 13px;
 }
 
 /* 마이페이지 베너 */
@@ -62,13 +62,14 @@ section{
     
 
     section{
-        width: 100%;
-        margin: 1%;
+        width: 90%;
+        margin: auto;
+        margin-bottom:20px;
     }
 
     .outerBox{
         width: 90%;
-        border:  2px solid #c67100;
+        border: 0px;
         padding: 3%;
         margin: 8% auto ;
     }
