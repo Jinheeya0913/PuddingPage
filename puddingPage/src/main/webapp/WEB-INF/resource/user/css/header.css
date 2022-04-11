@@ -168,9 +168,9 @@ body {
         width: 90%;
         height: 150px;
         background-color: var(--yellow-light-color);
-        margin: 20px auto 10px;
+        margin: 10px auto 10px;
         border-top: 8px solid var(--white-color);
-        border-bottom: 12px solid var(--white-color);
+        border-bottom: 1px solid var(--white-color);
         flex-flow : row wrap;
     }
     .logobox{
