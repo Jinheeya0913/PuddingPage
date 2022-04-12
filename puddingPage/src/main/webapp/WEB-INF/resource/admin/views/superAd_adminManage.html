@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script language="javascript">
+            function showPopup5() { 
+                window.open("adminAdd.html", "a", "width=600, height=400, left=100, top=50"); 
+            }
+    </script>
+    <link href="../css/superAd_Manage.css" rel="stylesheet" />
+	
+    <title>담당자 조회 및 관리</title>
+</head>
+<body id="wrap">
+    <section class="artistSet">
+    	
+    	<table id="artistList">
+    	<tr> 
+    	<td id="artistSeq">아티스트 번호</td>
+    	<td id="artistSeqV" name="artistSeq"></td>
+    	<td id="artistName">아티스트 이름</td>
+    	<td id="artistNameV" name="artistName"></td>
+    	<td id="artistNick">아티스트 별명</td>
+    	<td id="artistNickV" name="artistNick"></td>
+    	</tr>
+    	</table>
+
+    </section> 
+
+    <section class="adminTableDiv">
+
+    	<table id="admintList">
+    	<tr> 
+    	<td id="adminSeq">SEQ</td>
+    	<td id="adminCode">담당자 코드</td>
+    	<td id="adminIdnName">담당자ID / 이름</td>
+        <td id="adminEmail">담당자 이메일</td>
+        <td id="adminTel">담당자 전화번호</td>
+        <td id="deleteSection"></td>
+    	</tr>
+    	</table>
+
+        <div id="buttons">
+        <input id="addBt" type="button" name="addBt" value="새로추가"
+        onclick="showPopup5();">
+        <input id="closeBt" type="button" name="cancleBt" value="닫기" onclick="self.close()">
+ 
+        </div>
+
+    </section>
+
+</body>
+</html>

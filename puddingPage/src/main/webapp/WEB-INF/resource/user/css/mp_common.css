@@ -4,7 +4,6 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding: 30px;
 }
 
 
@@ -17,9 +16,6 @@ li{
 	list-style: none;
 }
 
-ul{
-	padding: 0 0 0 10px;
-}
 
 
 /* 프로모션 섹션 */
@@ -100,14 +96,14 @@ ul{
 		}
 
 		#pm_section .radio .pos1{
-			
+			display: none;
 		}
 
 
 
 /* 서브메뉴 섹션 */
 
-	#submenu{
+	#classmenu{
 		display: flex;
 		width: 100%;
 		border: solid 1px;

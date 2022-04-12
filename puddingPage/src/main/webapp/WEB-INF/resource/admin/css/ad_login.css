@@ -1,0 +1,70 @@
+/* textbox + button */
+.loginBox{
+
+margin-top: 150px;
+display: flex;
+justify-content: center;
+
+}
+
+/*fieldset line*/
+fieldset {
+
+	width: 250px;
+	height: 320px;
+}
+
+/*fieldset title*/
+legend {
+
+
+	justify-content: center;
+	align-items: center;
+	text-align: center ;
+}
+
+
+/*id div*/
+.idBox {
+
+	text-align: center ;
+	margin-top: 90px;
+	margin-bottom: 10px;
+
+}
+
+/*password div*/
+.pwBox {
+
+	text-align: center ;
+}
+
+
+/*login textbox size*/
+#adminId {
+
+	width: 80%;
+	height: 2%;
+
+}
+
+/*password textbox size*/
+#adminPw {
+
+	width: 80%;
+	height: 2%;
+
+}
+
+/*login button*/
+#loginBt {
+
+	margin-top: 27%;
+	margin-left: 27%;
+	width: 45%;
+	height: 8%;
+}
+
+
+
+@media 

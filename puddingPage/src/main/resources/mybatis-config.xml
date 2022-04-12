@@ -3,9 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+
     <properties resource="db.properties"/>
+
     <typeAliases>
-        <typeAlias alias="mymember" type="kg.im4.puddingPage.user.vo.MemberVO"/>
+        <typeAlias alias="myMember" type="kg.im4.puddingPage.user.vo.MemberVO"/>
+        <typeAlias alias="myAdmin" type="kg.im4.puddingPage.admin.vo.AdminVO"/>
+        <typeAlias alias="myArtist" type="kg.im4.puddingPage.admin.vo.ArtistVO"/>
     </typeAliases>
 
     <environments default="development">
@@ -19,7 +23,11 @@
             </dataSource>
         </environment>
     </environments>
+
     <mappers>
         <mapper resource="mappings/user-mapping.xml"/>
+        <mapper resource="mappings/admin-mapping.xml"/>
+        <mapper resource="mappings/artist-mapping.xml"/>
     </mappers>
+
 </configuration>
