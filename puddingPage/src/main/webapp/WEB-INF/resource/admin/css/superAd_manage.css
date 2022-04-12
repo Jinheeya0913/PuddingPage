@@ -1,0 +1,143 @@
+
+#wrap{
+
+	background-color: whitesmoke;
+	margin: 20px;
+	width: 100%;
+	height: 100%;
+}
+
+.artistSet{
+	margin-bottom: 50px;
+	font-size: 11pt;
+}
+
+#artistSeq{
+	word-wrap: break-word;
+
+}
+
+#artistSeqV {
+	width: 110px;
+}
+#artistName{
+	word-wrap: break-word;
+}
+
+#artistNameV{
+	width: 250px;
+
+}
+
+#artistNick{
+	word-wrap: break-word;
+}
+
+#artistNickV{
+	width: 300px;
+}
+
+table {
+    width:650px;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+  }
+
+td{
+	border: 1px solid #444444; 
+    text-align: center;
+    width:200px;
+    height: 45px;
+  }
+
+#artistList{
+
+}
+
+
+.form{
+	margin:40px;
+}
+
+#form1{
+
+	margin-bottom:15px;	
+
+}
+
+#form2{
+
+	margin-bottom:15px;	
+}
+
+#form3{
+
+	margin-bottom:15px;	
+
+}
+
+#form4{
+
+	margin-bottom:15px;	
+
+}
+
+#form5{
+
+	margin-bottom:15px;	
+
+}
+
+#artistName{
+	width:100px;
+	height: 20px;
+}
+
+#artistNick{
+	width:150px;
+	height: 20px;
+}
+	
+#artistEmail{
+	width:265px;
+	height: 20px;
+
+}
+
+#artistTel{
+
+	width:77px;
+	height: 25px;
+}
+
+
+
+#artistTel1{
+	width:72px;
+	height: 20px;
+}
+
+#artistTel2{
+	width:72px;
+	height: 20px;
+}
+
+#artistEnt{
+	width:150px;
+	height: 20px;
+}
+
+#form5{
+	margin-left: 200px;
+}
+
+#addBt{
+	width:60px;
+	margin-right:10px;
+	height: 30px;
+}
+
+#cancleBt{
+	width:60px;
+	height:30px;
+}
