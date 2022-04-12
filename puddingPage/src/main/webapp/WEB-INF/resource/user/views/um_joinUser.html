@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/um_joinUser.css">
+</head>
+
+<body>
+<section name="f">
+    <div class="join-user" style="align-items: center">
+        <!--이름-->
+        <div class="join-user__items">
+            <label>이름</label>
+            <input type="text" id="user_name" oninput="onInputInvalid('name')"/>
+            <span class="error_next_box" id="error_name" aria-live="assertive"></span>
+        </div>
+        <!--이메일-->
+        <div class="join-user__items">
+            <label>이메일</label>
+            <input id="user_email" type="email" oninput="onInputInvalid('email')"/>
+            <span class="error_next_box" id="error_email" aria-live="assertive"></span>
+        </div>
+        <!--비밀번호-->
+        <div class="join-user__items">
+            <label>비밀번호</label>
+            <input id="user_password" type="password" maxlength="15" placeholder="비밀번호를 입력하세요"
+                   oninput="onInputInvalid('password')">
+            <input id="user_check_password" type="password" maxlength="15" placeholder="비밀번호 확인"
+                   style="margin-top: 10px;" oninput="onInputInvalid('passwordCheck')">
+            <span class="error_next_box" id="error_password" aria-live="assertive"></span>
+        </div>
+        <!--생년월일-->
+        <div class="join-user__items">
+            <label>생년월일</label>
+            <div class="join-user__item--row" style="justify-content: space-between;">
+                    <span>
+                        <select id="user_birth_year" style="min-width: 70px; margin-right: 2px"></select>
+                    </span>
+                <span>
+                        <select id="user_birth_month" style="min-width: 70px; margin-right: 2px"></select>
+                    </span>
+                <span>
+                        <select id="user_birth_day" style="min-width: 70px; margin-right: 2px"></select>
+                    </span>
+            </div>
+        </div>
+        <!--연락처-->
+        <div class="join-user__items">
+            <label>연락처</label>
+            <div class="join-user__items--row" style="justify-content: space-between">
+                <select id="user_phone_number_pre" style="min-width: 60px;">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="016">016</option>
+                </select>
+                -
+                <input id="user_phone_number_in" style="max-width: 60px" maxlength="4">
+                -
+                <input id="user_phone_number_post" style="max-width: 60px" maxlength="4">
+            </div>
+        </div>
+        <!--성별-->
+        <div class="join-user__items">
+            <label>성별</label>
+            <div class="join-user__item--row">
+                <input type="radio" name="gender" value="남">남자
+                <input type="radio" name="gender" value="여">여자
+            </div>
+        </div>
+        <!--완료-->
+        <div class="join-user__items">
+            <button onclick="submit()">완료</button>
+        </div>
+    </div>
+    <script type="application/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="application/javascript" src="../js/um_joinUser.js"></script>
+</section>
+</body>
+
+</html>
