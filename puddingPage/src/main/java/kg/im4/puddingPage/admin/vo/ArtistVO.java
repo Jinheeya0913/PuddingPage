@@ -17,6 +17,7 @@ public class ArtistVO {
     private String ar_tell;
     private String ar_admin;
     private String ar_ent;
+    private String searchKeyword;
 
 
 

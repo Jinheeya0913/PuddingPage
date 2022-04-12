@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ArtistDAO">
+
+    <insert id="createArtist" parameterType="myArtist">
+        INSERT INTO ARTIST_TABLE(AR_NAME, AR_NICKNAME, AR_EMAIL, AR_TELL
+            AR_ADMIN, AR_ENT)
+        VALUES (#{ar_name}, #{ar_nickName}, #{ar_email}, #{ar_tell}
+            #{ar_admin}, #{ar_ent})
+    </insert>
+
+    <update id="modifyArtist" parameterType="myArtist">
+        UPDATE TABLE ARTIST_TABLE
+        SET AR_NAME = #{ar.name} ,AR_NICKNAME=#{ar_nickName}, AR_EMAIL= #{ar_email},
+            AR_TELL = #{ar_tell}, AR_ENT=#{ar_ent}
+        WHERE AR_SEQ = #{ar_seq}
+    </update>
+
+    <select id="getArtistList" parameterType="myArtist" resultType="myArtist">
+        SELECT * FROM ARTIST_TABLE
+        WHERE AR_NAME
+        LIKE "%"+"#{searchKeyword}"+"%"
+    </select>
+
+
+
+
+
+</mapper>

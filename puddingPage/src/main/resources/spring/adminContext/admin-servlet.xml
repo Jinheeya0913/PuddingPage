@@ -4,14 +4,17 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-
-    <context:component-scan base-package="kg.im4.puddingPage.admin.controller"/>
+    <context:component-scan base-package="kg.im4.puddingPage.admin.*"/>
+    <context:component-scan base-package="kg.im4.puddingPage.util"/>
+    <context:component-scan base-package="kg.im4.puddingPage.config"/>
 
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/resources/admin/views/"/>
         <property name="suffix"  value=".jsp"/>
     </bean>
+
+
 
 
 </beans>
