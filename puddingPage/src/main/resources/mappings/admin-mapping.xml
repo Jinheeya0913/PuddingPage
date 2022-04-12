@@ -3,8 +3,18 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="AdminDAO">
-    <insert id="createAdmin" parameterType="myadmin">
+    <insert id="createAdmin" parameterType="myAdmin">
         INSERT INTO ADMIN_TABLE (AD_ID, AD_PW, AD_NAME, AD_EMAIL, AD_TELL, AD_SUPER)
         VALUES (#{ad_id} , #{ad_pw} , #{ad_name} , #{ad_email} , #{ad_tell} , #{ad_super})
     </insert>
+
+    <delete id="deleteAdmin" parameterType="myAdmin">
+        DELETE FROM ADMIN_TABLE
+        WHERE AD_ID=#{ad_id}
+    </delete>
+
+    <select id="loginAdmin" parameterType="myAdmin" resultType="myAdmin">
+        SELECT * FROM ADMIN_TABLE
+        WHERE AD_ID={#ad_id} AND AD_PW={#ad_pw}
+    </select>
 </mapper>

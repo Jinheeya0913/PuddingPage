@@ -5,32 +5,32 @@
 <mapper namespace="MemberDAO">
 
 <!-- 회원 가입  -->
-    <insert id="createMember" parameterType="mymember">
+    <insert id="createMember" parameterType="myMember">
         INSERT INTO UR_MEMBER ( UR_MAIL, UR_PW, UR_NAME, UR_BIRTH )
         VALUES ( #{ur_mail}, #{ur_pw} , #{ur_name} , #{ur_birth} )
     </insert>
 
 <!-- 회원 수정  -->
-    <update id="updateMember" parameterType="mymember">
+    <update id="updateMember" parameterType="myMember">
         UPDATE TABLE UR_MEMBER
         SET UR_PW = #{ur_pw}, UR_BIRTH=#{ur_birth} , UR_NAME=#{ur_nmae}
         WHERE UR_MAIL=#{ur_mail} AND UR_PW=#{ur_pw}
     </update>
 
 <!-- 회원 삭제 및 탈퇴 -->
-    <delete id="deleteMember" parameterType="mymember">
+    <delete id="deleteMember" parameterType="myMember">
         DELETE * FROM UR_MEMBER
         WHERE UR_MAIL=#{ur_mail}
     </delete>
 
 <!-- 로그인 성공 -->
-    <select id="loginMember" parameterType="mymember" resultType="mymember">
+    <select id="loginMember" parameterType="myMember" resultType="myMember">
         SELECT * FROM UR_MEMBER
         WHERE UR_MAIL=#{ur_mail} AND UR_PW = #{ur_pw}
     </select>
 
 <!-- 푸딩 충전    -->
-    <update id="chargePudding" parameterType="mymember">
+    <update id="chargePudding" parameterType="myMember">
         UPDATE TABLE UR_MEMBER
         SET UR_PUDDING=UR_PUDDING + #{ur_pudding}
         WHERE UR_MAIL=#{UR_MAIL}
